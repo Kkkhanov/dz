@@ -39,24 +39,7 @@ function f2(){
     }
 }
 
-function discountCalc(){
-    let sum = $('#sum').val();
-    if(sum >=200 && sum < 300){
-        let discount1 = sum * 0.03;
-        let total1 = sum - discount1;
-        $('#out1').text('Ваша сумма со скидкой будет равна ' + total1);
-    }
-    else if(sum >=300 && sum < 500){
-        let discount2 = sum * 0.05;
-        let total2 = sum - discount2;
-        $('#out1').text('Ваша сумма со скидкой будет равна ' + total2);
-    }
-    else if(sum >= 500){
-        let discount3 = sum * 0.07;
-        let total3 = sum - discount3;
-        $('#out1').text('Ваша сумма со скидкой будет равна ' + total3);
-    }
-}
+
 
 button1.onclick = f1;
 button2.onclick = f2;
